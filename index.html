@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renta de Maquinaria Pesada | Terramax</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar py-2">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <span class="small"><i class="bi bi-geo-alt"></i> Concepción · Los Ángeles · Chillán</span>
+        <a class="small link-light text-decoration-none" href="tel:+56900000000"><i class="bi bi-telephone"></i> +56 9 0000 0000</a>
+        <a class="small link-light text-decoration-none" href="mailto:cotizaciones@terramax.cl"><i class="bi bi-envelope"></i> cotizaciones@terramax.cl</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle">Disponibilidad 24/7</span>
+        <span class="badge rounded-pill bg-light-subtle text-light border border-light-subtle">Respuesta en 15 min</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top navglass">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="brand-mark">TM</span>
+        <span class="fw-semibold">Terramax</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#maquinas">Maquinaria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="d-flex gap-2 ms-lg-3">
+          <a class="btn btn-outline-light btn-sm" href="#contacto"><i class="bi bi-file-earmark-text"></i> Cotizar</a>
+          <button class="btn btn-warning btn-sm" id="btnTheme" type="button" aria-label="Cambiar tema">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="eyebrow mb-2"><i class="bi bi-shield-check"></i> Equipos certificados · Operadores calificados · Mantención al día</p>
+          <h1 class="display-5 fw-bold lh-sm">Renta de maquinaria pesada para obras que no pueden parar</h1>
+          <p class="lead text-hero mt-3">
+            Arriendo por día, semana o mes. Entrega en terreno, operador opcional y soporte rápido.
+            Catálogo claro, cotización en minutos.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a href="#maquinas" class="btn btn-primary btn-lg"><i class="bi bi-truck"></i> Ver catálogo</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots"></i> Pedir cotización</a>
+          </div>
+
+          <div class="row mt-4 g-3">
+            <div class="col-6 col-md-4">
+              <div class="stat">
+                <div class="stat-num">+120</div>
+                <div class="stat-txt">Equipos activos</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="stat">
+                <div class="stat-num">1–24h</div>
+                <div class="stat-txt">Entrega</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="stat">
+                <div class="stat-num">4.8/5</div>
+                <div class="stat-txt">Clientes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <div class="hero-img ratio ratio-16x9 rounded-4 overflow-hidden">
+              <img alt="Maquinaria pesada en faena" class="w-100 h-100 object-fit-cover"
+                   src="https://images.unsplash.com/photo-1503327431567-3ab5e6e79140?auto=format&fit=crop&w=1600&q=80">
+            </div>
+            <div class="hero-card-body p-3 p-md-4">
+              <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="pill"><i class="bi bi-lightning-charge"></i> Respuesta rápida</span>
+                  <span class="pill"><i class="bi bi-tools"></i> Mantención</span>
+                  <span class="pill"><i class="bi bi-clipboard2-check"></i> Seguridad</span>
+                </div>
+                <a class="btn btn-success" href="#contacto"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+              </div>
+              <div class="mt-3 small text-muted">
+                * Maqueta demo: reemplaza nombre, teléfono y cobertura por los de tu negocio.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-gradient"></div>
+  </header>
+
+  <!-- Trust strip -->
+  <section class="py-4 trust">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-lg-3">
+          <div class="trust-title">Trabajamos con estándares de seguridad</div>
+        </div>
+        <div class="col-lg-9">
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+            <span class="trust-badge"><i class="bi bi-patch-check"></i> Checklist diario</span>
+            <span class="trust-badge"><i class="bi bi-cone-striped"></i> Protocolos en faena</span>
+            <span class="trust-badge"><i class="bi bi-clipboard-data"></i> Bitácora de mantención</span>
+            <span class="trust-badge"><i class="bi bi-person-badge"></i> Operadores calificados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="maquinas" class="section py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+        <div>
+          <h2 class="h1 fw-bold mb-1">Catálogo de maquinaria</h2>
+          <p class="text-muted mb-0">Filtra por categoría o busca por nombre. Haz clic para ver detalles.</p>
+        </div>
+
+        <div class="filters d-flex flex-wrap gap-2">
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input id="searchInput" type="text" class="form-control" placeholder="Buscar: excavadora, grúa..." />
+          </div>
+          <select id="categorySelect" class="form-select">
+            <option value="all">Todas</option>
+            <option value="movimiento">Movimiento de tierra</option>
+            <option value="izaje">Izaje</option>
+            <option value="compactacion">Compactación</option>
+            <option value="carga">Carga</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="catalogGrid" class="row g-4">
+        <!-- JS inyecta las cards -->
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <button id="btnLoadMore" class="btn btn-outline-primary">
+          <i class="bi bi-plus-circle"></i> Cargar más
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section-alt py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="h1 fw-bold mb-3">Servicios pensados para obra real</h2>
+          <p class="text-muted">
+            No es solo “arrendar”. Te apoyamos para que el equipo llegue, opere y rinda como debe.
+            Puedes contratar por faena o por períodos.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-md-6">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-truck-front"></i></div>
+                <div>
+                  <div class="fw-semibold">Traslado a terreno</div>
+                  <div class="text-muted small">Coordinación y entrega según tu cronograma.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-person-gear"></i></div>
+                <div>
+                  <div class="fw-semibold">Operador opcional</div>
+                  <div class="text-muted small">Operadores con experiencia según equipo.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-tools"></i></div>
+                <div>
+                  <div class="fw-semibold">Soporte y mantención</div>
+                  <div class="text-muted small">Bitácora + respuesta rápida ante fallas.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature">
+                <div class="feature-icon"><i class="bi bi-clipboard-check"></i></div>
+                <div>
+                  <div class="fw-semibold">Checklists de seguridad</div>
+                  <div class="text-muted small">Inspección pre-operacional y recomendaciones.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary btn-lg"><i class="bi bi-send"></i> Cotizar ahora</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-soft">
+            <img alt="Equipo en terreno" class="w-100 h-100 object-fit-cover"
+                 src="https://images.unsplash.com/photo-1506898665064-b4b1f1e9d439?auto=format&fit=crop&w=1400&q=80">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section id="planes" class="section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="h1 fw-bold mb-2">Planes de arriendo</h2>
+        <p class="text-muted mb-0">Valores referenciales. Ajustamos por faena, distancia y operador.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card pricing h-100">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h4 fw-bold mb-0">Diario</h3>
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Flexible</span>
+              </div>
+              <p class="text-muted mt-2">Ideal para trabajos puntuales o refuerzos.</p>
+              <div class="price">$ 0<span class="fs-6 text-muted"> / día</span></div>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li class="mb-2"><i class="bi bi-check2"></i> Contrato rápido</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> Entrega coordinada</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> Soporte básico</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100">Pedir precio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card pricing featured h-100">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h4 fw-bold mb-0">Semanal</h3>
+                <span class="badge bg-warning text-dark">Más elegido</span>
+              </div>
+              <p class="text-muted mt-2">Balance perfecto entre costo y continuidad.</p>
+              <div class="price">$ 0<span class="fs-6 text-muted"> / semana</span></div>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li class="mb-2"><i class="bi bi-check2"></i> Mejor tarifa</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> Prioridad de disponibilidad</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> Soporte extendido</li>
+              </ul>
+              <a href="#contacto" class="btn btn-primary w-100">Cotizar semanal</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card pricing h-100">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h4 fw-bold mb-0">Mensual</h3>
+                <span class="badge bg-success-subtle text-success border border-success-subtle">Ahorro</span>
+              </div>
+              <p class="text-muted mt-2">Para proyectos largos, con planificación y mantención.</p>
+              <div class="price">$ 0<span class="fs-6 text-muted"> / mes</span></div>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li class="mb-2"><i class="bi bi-check2"></i> Tarifa preferencial</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> Mantención programada</li>
+                <li class="mb-2"><i class="bi bi-check2"></i> SLA acordado</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100">Cotizar mensual</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info mt-4 mb-0">
+        <i class="bi bi-info-circle"></i>
+        Tip: si ya tienes la lista de equipos que necesitas, envíala por el formulario y te respondemos con disponibilidad.
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section-alt py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h1 fw-bold mb-3">Sobre Terramax</h2>
+          <p class="text-muted">
+            Somos una empresa ficticia para esta maqueta. La idea es que uses esta base, cambies el nombre,
+            colores, catálogo y textos para tu negocio real.
+          </p>
+          <div class="row g-3 mt-2">
+            <div class="col-md-6">
+              <div class="mini-card">
+                <div class="fw-semibold"><i class="bi bi-award"></i> Experiencia</div>
+                <div class="text-muted small">Equipos para obras civiles, forestales y movimiento de tierra.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mini-card">
+                <div class="fw-semibold"><i class="bi bi-people"></i> Equipo</div>
+                <div class="text-muted small">Coordinación, logística y soporte en terreno.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mini-card">
+                <div class="fw-semibold"><i class="bi bi-shield-check"></i> Seguridad</div>
+                <div class="text-muted small">Enfoque en control y procedimientos para faena.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mini-card">
+                <div class="fw-semibold"><i class="bi bi-geo"></i> Cobertura</div>
+                <div class="text-muted small">Región del Biobío y alrededores (editable).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card shadow-soft border-0 rounded-4 overflow-hidden">
+            <div class="ratio ratio-16x9">
+              <img alt="Equipo de trabajo" class="w-100 h-100 object-fit-cover"
+                   src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80">
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-dark-subtle text-dark border border-dark-subtle">RUT: 00.000.000-0</span>
+                <span class="badge bg-dark-subtle text-dark border border-dark-subtle">Oficina: Concepción</span>
+                <span class="badge bg-dark-subtle text-dark border border-dark-subtle">Horario: 08:30–18:30</span>
+              </div>
+              <div class="mt-3 small text-muted">
+                Recomendación: agrega testimonios reales y fotos de tus equipos para que la página venda más.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="h1 fw-bold mb-2">Cotiza sin vuelta</h2>
+          <p class="text-muted">
+            Cuéntanos qué necesitas, dónde y para cuándo. Te respondemos con disponibilidad y condiciones.
+          </p>
+
+          <div class="contact-card p-4 rounded-4">
+            <div class="d-flex gap-3 align-items-start mb-3">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <div class="fw-semibold">Teléfono</div>
+                <a class="text-decoration-none" href="tel:+56900000000">+56 9 0000 0000</a>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 align-items-start mb-3">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <div class="fw-semibold">Correo</div>
+                <a class="text-decoration-none" href="mailto:cotizaciones@terramax.cl">cotizaciones@terramax.cl</a>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 align-items-start">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <div class="fw-semibold">Cobertura</div>
+                <div class="text-muted small">Biobío y alrededores (editable)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card shadow-soft border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+              <form id="quoteForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Nombre</label>
+                    <input name="name" class="form-control" placeholder="Tu nombre" required>
+                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Teléfono</label>
+                    <input name="phone" class="form-control" placeholder="+56 9 ..." required>
+                    <div class="invalid-feedback">Ingresa un teléfono válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Correo</label>
+                    <input name="email" type="email" class="form-control" placeholder="tucorreo@..." required>
+                    <div class="invalid-feedback">Ingresa un correo válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Ciudad / Sector</label>
+                    <input name="city" class="form-control" placeholder="Ej: Concepción" required>
+                    <div class="invalid-feedback">Indica ciudad o sector.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Equipo(s)</label>
+                    <input name="machines" class="form-control" placeholder="Ej: Excavadora 20T, Rodillo" required>
+                    <div class="invalid-feedback">Indica al menos un equipo.</div>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label">Desde</label>
+                    <input name="from" type="date" class="form-control" required>
+                    <div class="invalid-feedback">Selecciona fecha.</div>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label">Días</label>
+                    <input name="days" type="number" min="1" class="form-control" placeholder="Ej: 7" required>
+                    <div class="invalid-feedback">Ingresa cantidad de días.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Detalles</label>
+                    <textarea name="details" class="form-control" rows="4" placeholder="Terreno, accesos, operador sí/no, horario, etc." required></textarea>
+                    <div class="invalid-feedback">Cuéntanos un poco más para cotizar mejor.</div>
+                  </div>
+
+                  <div class="col-12 d-flex flex-wrap gap-2 justify-content-between align-items-center mt-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="1" id="operatorCheck">
+                      <label class="form-check-label" for="operatorCheck">
+                        Quiero incluir operador
+                      </label>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg" type="submit">
+                      <i class="bi bi-send"></i> Enviar solicitud
+                    </button>
+                  </div>
+
+                  <div class="col-12">
+                    <div id="formAlert" class="alert d-none mb-0" role="alert"></div>
+                    <div class="small text-muted mt-2">
+                      Demo: el formulario no envía correos. Deja el flujo listo para integrar con backend/EmailJS.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div class="small text-muted">
+          © <span id="year"></span> Terramax · Maqueta HTML/Bootstrap.
+        </div>
+        <div class="d-flex gap-3">
+          <a class="text-decoration-none text-muted" href="#inicio">Inicio</a>
+          <a class="text-decoration-none text-muted" href="#maquinas">Maquinaria</a>
+          <a class="text-decoration-none text-muted" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a class="wa-float" href="https://wa.me/56900000000" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="machineModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4 overflow-hidden">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Equipo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <img id="modalImg" alt="Imagen del equipo" class="w-100 h-100 object-fit-cover" src="">
+          </div>
+          <div class="p-4">
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <span id="modalCat" class="badge text-bg-primary"></span>
+              <span id="modalTag" class="badge text-bg-dark"></span>
+            </div>
+            <p id="modalDesc" class="text-muted mb-3"></p>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="spec">
+                  <div class="spec-k">Capacidad</div>
+                  <div id="modalCap" class="spec-v">—</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="spec">
+                  <div class="spec-k">Peso / clase</div>
+                  <div id="modalWeight" class="spec-v">—</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="spec">
+                  <div class="spec-k">Entrega</div>
+                  <div id="modalEta" class="spec-v">—</div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
+              <div class="small text-muted">
+                * Valores y disponibilidad son referenciales.
+              </div>
+              <a href="#contacto" class="btn btn-primary" data-bs-dismiss="modal">
+                <i class="bi bi-file-earmark-text"></i> Cotizar este equipo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
